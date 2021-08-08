@@ -32,6 +32,7 @@
 	height: 400px;
 	border: 1px solid #42F;
 	background: url("../image/poor.jpg") no-repeat center center;
+	display: flex;
 	align-items: center;
 }
 .copy{
@@ -47,21 +48,34 @@
 	border: 2px solid #ccc;
 }
 .text{
-	width:360px;
+	width:280px;
+	height:160px;
+	margin-top:20px;
+	padding-right:15px;
+	border-left: 8px solid #F0F;  /*borderÇÃëOÇ…border-leftÇ∆Ç©èëÇ¢ÇΩÇÁîΩâfÇ≥ÇÍÇ»Ç¢*/
 	border: 1px solid #F0F;
+	border-right: 8px solid #F0F;
+	font:normal 18px/2em sans-serf;
+	display:flex;
+	align-items: center;
 }
 .menu{
-	width:360px;
+	width:300px;
+	font:normal 18/1.6em sans-serif;
+	display:flex;
 	border: 1px solid #0F0;
 }
 
 .footer{
 	height:120px;
 	margin-top:30px;
+	background-color:#bec9c9;
+	display:flex;
+	justify-content: center;
 	border: 1px solid #000;
 }
 .footer_contents{
-	margin: 0 auto;
 	width:980px;
 	text-align: center;
+	slign-self: flex-end;
 }

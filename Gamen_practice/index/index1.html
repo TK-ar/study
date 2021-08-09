@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>flex1</title>
+</head>
+<body>
+<style>
+	/*----ここから初期設定-------*/
+	div,ul{
+		border: 3px solid #fcc;
+		padding: 3px;
+	}
+	div > div,span,li,p{
+		backgroud: #eee;
+		margin:2px;
+		padding: 0 5px;
+		border: 1px solid #ccc;
+		list-style: none;
+	}
+	/*----ここまで初期設定-------*/
+	
+	.container_box{
+		display:flex;
+	}
+	.box{
+		flex:1;
+	}
+	
+	/*子要素の配置する方向を指定。横並びか縦並び(row,column,_revereseは逆順)を指示*/
+	.container_flex-direction{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	/*子要素の行数を指定するプロパティ。一行、または複数行に並べるかを指示*/
+	.container_flex-wrap{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.box_flex_wrap{
+		width:28%;
+	}
+	
+	/*flexコンテナー内を横並びさせたときの位置や間隔の指定*/
+	.container_justify-content1{
+		display:flex;
+		justify-content: flex-end;
+	}
+	.container_justify-content2{
+		display:flex;
+		justify-content: center;
+	}
+	.container_justify-content3{
+		display:flex;
+		justify-content: space-around;
+	}
+	
+	.container_align_items{
+		height:80px;
+		display:flex;
+		align-items: center;
+	}
+	
+	.ikko_flex1{
+		display:flex;
+	}
+	.ikko_box1{
+		margin-left:auto;
+		width:20%;
+		background-color:#c55;
+	}
+	.ikko_flex2{
+		display:flex;
+	}
+	.ikko_box2{
+		height:40px;
+		margin:auto;
+		width:20%;
+		background-color:#CCC;
+	}
+	
+	.center_center_container{
+		height:100px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.center_center_box{
+		height:80px;
+		width:100px;
+		background-color:#eee;
+	}
+</style>
+
+	<div class="container_box">
+		<div class="box">①</div>
+		<div class="box">②</div>
+	</div>
+
+	<div class="container_flex-direction">
+		<div>①</div>
+		<div>②</div>
+		<div>③</div>
+	</div>
+	
+	<div class="container_flex-wrap">
+		<div class="box_flex_wrap">①</div>
+		<div class="box_flex_wrap">②</div>
+		<div class="box_flex_wrap">③</div>
+		<div class="box_flex_wrap">④</div>
+	</div>
+	
+
+	<div class="container_justify-content1">
+		<div>①</div>
+		<div>②</div>
+		<div>③</div>
+	</div>
+	
+	<div class="container_justify-content2">
+		<div>①</div>
+		<div>②</div>
+		<div>③</div>
+	</div>
+	
+	<div class="container_justify-content3">
+		<div>①</div>
+		<div>②</div>
+		<div>③</div>
+	</div>
+
+	
+	<div class="container_align_items">
+		<div style="height:40px;">①</div>
+		<div>②</div>
+		<div style="height:70px;">③</div>
+		<div>④</div>
+	</div>
+
+	<div class="ikko_flex1">
+		<div>①</div>
+		<div class="ikko_box1">②</div>
+		<div>③</div>
+	</div>
+
+	<div class="ikko_flex2">
+		<div>①</div>
+		<div class="ikko_box2">②</div>
+		<div>③</div>
+	</div>
+	
+	<div class="center_center_container">
+		<div class="center_center_box">子要素</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+

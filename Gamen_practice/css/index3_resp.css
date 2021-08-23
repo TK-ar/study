@@ -1,0 +1,382 @@
+/******************************
+ 初期設定
+******************************/
+body {
+  color: #060606;
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: 0.06em;
+}
+a{
+  text-decoration: none;
+  color: #060606;
+}
+
+
+/******************************
+ header CSS
+******************************/
+.header {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+/* 画面サイズが768px以下になったら適応されます */
+@media screen and (max-width: 768px) {
+  .header {
+  border:1px solid #FF0;
+    padding: 40px 0;
+  }
+}
+
+.header__wrap{
+	border: 1px solid #0F0;
+	width:50%;
+	margin:0 auto; /*センタリングします*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* 画面サイズが768px以下になったら適応されます */
+@media screen and (max-width: 768px){
+  .header__wrap{
+	width:100%;
+	flex-direction: column;
+  }
+}
+
+.header__logo {
+  width: 54px;
+  height: 76px;
+}
+/* 画面サイズが768px以下になったら適応されます */
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+}
+.header__logo a {
+  display: block;
+}
+/* 画面サイズが768px以下になったら適応されます */
+@media screen and (max-width: 768px) {
+  .header__logo a img {
+    width: 100%;
+  }
+}
+
+
+.header__menu{
+}
+@media screen and (max-width: 768px) {
+  .header__menu{
+    width: 100%;
+  }
+}
+
+.header__menu ul {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .header__menu ul {
+    width: 100%;
+  }
+}
+
+.header__menu ul li {
+  width: 80px;
+}
+@media screen and (max-width: 768px) {
+  .header__menu ul li{
+    width: calc(100% / 4);
+  }
+}
+
+.header__menu ul li a{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .header__menu ul li a{
+    font-size: 13px;
+  }
+}
+
+
+/**********************************
+ main
+**********************************/
+.main{
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 110px;
+  }
+}
+
+.main__kv {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/top_kv.jpg) center/cover no-repeat;
+  font:normal 24px/1.8 sans-serif;
+  padding-left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .main__kv{
+    height: 50vh;
+    font-size: 18px;
+  }
+}
+
+.main__about {
+  width: 85%;
+  margin: 50px auto 200px;
+  padding: 0 10px 80px;
+}
+@media screen and (max-width: 768px) {
+ .main_about {
+   margin: 40px 0 120px;
+ }
+}
+
+.main__about--ttl {
+  margin-bottom:60px;
+  text-align: center;
+  color: #060606;
+  font-size: 28px;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .main__about--ttl {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+.main__about--logo {
+  width: 40%;
+  margin:0 auto;
+}
+@media screen and (max-width: 768px) {
+  .main__about--logo {
+    width: 30%;
+  }
+}
+
+.main__about--txt {
+  margin: 45px 0 60px;
+  text-align: center;
+  padding:0 20px;
+  font:normal 16px/2 sans-serif;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 768px) {
+  .main__about--txt {
+    width: 80%;
+    margin: 30px auto 40px;
+    font-size: 13px;
+  }
+}
+
+.main__service {
+  width: 85%;
+  margin:10px auto;
+  padding:20px 20px 100px;
+  background-color:#fffbe8;
+}
+@media screen and (max-width: 768px) {
+  .main__service {
+    padding-bottom: 60px;
+  }
+}
+
+.main__service--message {
+	margin-bottom: 95px;
+}
+
+.main__service--message h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .main__service--message h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.main__service--message p {
+  width: 67%;
+  margin: 40px 0 0 auto;
+  font-size: 16px;
+  line-height: 2.2;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .main__service--message p {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+
+.main__service--list {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .main__service--list {
+    flex-direction: column;
+  }
+}
+
+.main__service--list li {
+  flex:1;
+  margin-right: 2%;
+}
+@media screen and (max-width: 768px) {
+  .main__service--list li {
+    width: 100%;
+    margin-bottom:30px;
+  }
+}
+
+.main__service--list li a{
+	border: 1px solid #FF0;
+	display: block;
+	height: 100%;
+}
+.main__service--list li img{
+	border: 1px solid #FF0;
+	width: 100%;
+  display: block;
+}
+.main__service--list li h3{
+	border: 1px solid #FF0;
+	margin: 50px 0 30px 0;
+}
+@media screen and (max-width: 768px) {
+  .main__service--list h3 {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+}
+
+.main__service--list li p{
+	border: 1px solid #FF0;
+}
+@media screen and (max-width: 768px) {
+  .main__service--list li p{
+   font-size: 13px;
+  }
+}
+
+.main__news {
+  width: 85%;
+  margin:10px auto;
+  padding: 0 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .main__news {
+    padding: 50px 0 0;
+  }
+}
+
+.main__news--ttl {
+  margin-bottom: 16px;
+  padding-top:120px;
+  font-size: 48px;
+}
+@media screen and (max-width: 768px) {
+  .main__news--ttl {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.main__news--list{
+  padding: 40px 12px;
+  border: 1px solid #FF0;
+}
+.main__news--list li{
+  border: 1px solid #e8ecee;
+}
+.main__news--list li:first-child{
+  border-top: 1px solid #e8ecee;
+}
+.main__news--list li a{
+  display: block;
+  padding: 50px 20px;
+  border: 1px solid #00F;
+}
+@media screen and (max-width: 768px) {
+  .main__news--list li a {
+    display: block;
+    padding: 24px 12px;
+  }
+}
+
+.main__news--list li a:hover{
+  background: #e8ecee;
+}
+.main__news--item {
+  display: flex;
+  border: 1px solid #F0F;
+}
+@media screen and (max-width: 768px) {
+  .main__news--item {
+    flex-direction: column;
+    line-height: 1.6;
+  }
+}
+
+.main__news--dt {
+  width: 265px;
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+  border: 1px solid #00F;
+}
+@media screen and (max-width: 768px) {
+  .main__news--day {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+.main__news--dd {
+  line-height: 1.8;
+  border: 1px solid #F00;
+}
+@media screen and (max-width: 768px) {
+  .main__news--date {
+    margin-right: 0;
+  }
+}
+
+/**********************************
+ footer
+**********************************/
+.footer{
+	border:1px solid #0F0;
+	padding: 90px 0 70px; /*内側 上に90px 下に70pxの余白*/
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 50px;
+  }
+}
+
+.footer__logo{
+	border: 1px solid #F00;
+	width: 100px;
+	margin: 0 auto;
+}
+.footer__copyright{
+	color: #b5b5b5;
+	border: 1px solid #BBB;
+	margin-top: 30px;
+	text-align: center;
+}

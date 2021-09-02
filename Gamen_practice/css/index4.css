@@ -22,3 +22,27 @@ section{
 .hover_off{
   background-color:#EEE;
 }
+.list_slideToggle{
+  border:1px solid #FF0;
+}
+
+.list_slideToggle li div{
+  border:1px solid #000;
+  cursor: pointer;
+}
+
+.list_slideToggle_inner{
+  border:1px solid #F00;
+}
+
+.list_slideToggle_inner li{
+  border:1px solid #000;
+}
+
+.list_slideToggle_inner2{
+  border:1px solid #F00;
+}
+
+.list_slideToggle_inner2 li{
+  border:1px solid #000;
+}

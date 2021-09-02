@@ -4,7 +4,7 @@ $(document).ready(function(){
   });
 });
 
-/*$(document).ready(function(){の省略形 */
+/*$(document).ready(function(){  の省略形 */
 $(function(){
   $('#text').mouseover(function(){
     $(this).removeClass('hover_off');
@@ -16,6 +16,11 @@ $(function(){
   $('#text').mouseout(function(){
     $(this).removeClass('hover_on');
     $(this).addClass('hover_off');
-    
-  })
-})
+  });
+});
+
+$(function(){
+  $(".list_slideToggle > li > div").click(function(){
+    $(this).next("ul").slideToggle("fast");    /* クリックされた要素の次にあるdivを表示させる。*/
+  });
+});

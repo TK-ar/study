@@ -20,7 +20,32 @@ $(function(){
 });
 
 $(function(){
-  $(".list_slideToggle > li > div").click(function(){
-    $(this).next("ul").slideToggle("fast");    /* クリックされた要素の次にあるdivを表示させる。*/
+  $('.list_slideToggle > li > div').click(function(){
+    $(this).next('ul').slideToggle('fast');    /* クリックされた要素の次にあるdivを表示させる。*/
   });
+});
+
+$(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 200){
+      $('.Top_btn').fadeIn();
+    }else{
+      $('.Top_btn').fadeOut();
+    }
+  });
+  $('.Top_btn').click(function(){
+    $('body, html').animate({scrollTop:0},50);
+  });
+});
+
+$(function(){
+   $('.tooltip').hide();
+   $('.tooltip').hover(
+     function(){
+          $(this).children('.tooltip').fadeIn('fast');
+     },
+     function(){
+          $(this).children('.tooltip').fadeOut('fast');
+     }
+   );
 });

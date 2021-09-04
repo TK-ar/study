@@ -26,23 +26,78 @@ section{
   border:1px solid #FF0;
 }
 
-.list_slideToggle li div{
+.list_slideToggle > li > div{
   border:1px solid #000;
   cursor: pointer;
 }
 
+
+ul, li{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
 .list_slideToggle_inner{
+  display: none;
   border:1px solid #F00;
 }
 
-.list_slideToggle_inner li{
+.list_slideToggle_inner > li{
   border:1px solid #000;
+  text-align: center;
 }
 
-.list_slideToggle_inner2{
-  border:1px solid #F00;
+.Top_btn{
+  width: 60px;
+  height: 60px;
+  /*display: none;*/
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.Top_btn > img{
+  width: 100%;
+  height: auto;
 }
 
-.list_slideToggle_inner2 li{
-  border:1px solid #000;
+.Tip{
+  display :flex;
+  width :90px; 
+  height: 50px;
+}
+.Tip li{
+  width :80px; 
+  height :30px;
+  border :1px solid #FF0;
+  padding :3px 10px;
+  margin :10px;
+  vertical-align: center;
+}
+
+}
+.tooltip {
+    width:130px;
+    padding:10px;
+    font-size:12px;
+    margin:-30px 0 0;
+    background-color:#666;
+    color:#fff;
+    position:absolute;
+    right:-160px;
+    top: 50%;
+}
+.tooltip:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: rgba(102, 102, 102, 0);
+  border-right-color: #5e5e5e;
+  border-width: 8px;
+  margin-top: -8px;
 }

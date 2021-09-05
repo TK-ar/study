@@ -62,42 +62,41 @@ ul, li{
   height: auto;
 }
 
-.Tip{
+#Tip{
+  position:relative;
+}
+#Tip ul{
   display :flex;
   width :90px; 
   height: 50px;
 }
-.Tip li{
+#Tip ul li{
   width :80px; 
   height :30px;
   border :1px solid #FF0;
   padding :3px 10px;
   margin :10px;
   vertical-align: center;
+  background-color: #ffff00;
+  font: small-caps bold 20px/1 arial black;
 }
 
-}
 .tooltip {
-    width:130px;
-    padding:10px;
-    font-size:12px;
-    margin:-30px 0 0;
-    background-color:#666;
-    color:#fff;
-    position:absolute;
-    right:-160px;
-    top: 50%;
-}
-.tooltip:before {
-  right: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
+  padding: 0.3em 1em;
   position: absolute;
-  border-color: rgba(102, 102, 102, 0);
-  border-right-color: #5e5e5e;
-  border-width: 8px;
-  margin-top: -8px;
+  top: 40px;
+  color: #fff;
+  background-color: #51A2C1;
+  border-radius: 0.6em;
+  z-index: 100;
+}
+.tooltip::after {
+  color:#fff;
+  content:'';
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #F00;
+  border-left: 10px solid transparent;
 }

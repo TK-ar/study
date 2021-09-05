@@ -40,7 +40,7 @@ $(function(){
 
 $(function(){
    $('.tooltip').hide();
-   $('.tooltip').hover(
+   $('#Tip li').hover(
      function(){
           $(this).children('.tooltip').fadeIn('fast');
      },
